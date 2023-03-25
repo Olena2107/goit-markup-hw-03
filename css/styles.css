@@ -55,7 +55,7 @@ ul {
 }
 .container {
   width: 1158px;
-  padding-left: 15;
+  padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
@@ -69,6 +69,7 @@ ul {
 .header {
   padding-top: 26px;
   padding-bottom: 26px;
+  border-bottom: 1px solid #E7E9FC;
 }
 .header-container {
   display: flex;
@@ -152,7 +153,7 @@ ul {
   background-color: var(--background-color);
   text-align: center;
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 .hero-item {
   font-weight: 700;
@@ -210,9 +211,11 @@ ul {
   overflow: hidden;
 }
 .about-list {
-  margin-bottom: 8px;
   display: flex;
   gap: 24px;
+}
+.about-main-text {
+width: calc((100% - 72) / 4);
 }
 .about-title {
   font-weight: 500;
@@ -234,7 +237,6 @@ ul {
 }
 /*/--WHAT--*/
 .what {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 .what-title {
@@ -248,12 +250,10 @@ ul {
   margin-bottom: 72px;
 }
 .what-list {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
 }
 .what-photo {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 /*/--TEAM--*/
 
@@ -283,6 +283,10 @@ ul {
   display: flex;
   gap: 24px;
 }
+.team-main-text {
+padding-top: 32px;
+padding-bottom: 32px;
+}
 
 .team-item {
   font-weight: 500;
@@ -292,7 +296,6 @@ ul {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   background-color: var(--second-title-color);
-  margin-top: 32px;
   margin-bottom: 8px;
   
  
@@ -309,8 +312,8 @@ ul {
 }
 /*/--FOOTER--*/
 .footer {
-  padding-top: 102px;
-  padding-bottom: 190px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--background-color);
 }
 .footer-logo {
@@ -392,7 +395,6 @@ ul {
   background-color: var(--milk-title-color);
   cursor: pointer;
   border: transparent;
-  margin-bottom: 72px;
 }
 .novigation-btn:hover,
 .novigation-btn:focus {
@@ -407,7 +409,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   width: calc((100% - 48) / 3);
-  gap:48px 24px;
+  gap: 48px 24px;
+  margin-top: 72px;
 }
 
 .services-link {
@@ -416,12 +419,16 @@ ul {
 }  
 
 .services-item {
+
+}
+.services-main-text {
   border-right: 1px solid #E7E9FC;
   border-left: 1px solid #E7E9FC;
   border-bottom: 1px solid #E7E9FC;
-}
-.services-text{
-
+  padding-top: 32px ;
+  padding-left: 16px ;
+  padding-bottom: 32px;
+  width: calc((100% - 48) / 3);
 }
 .services-title {
   font-weight: 500;
@@ -429,7 +436,8 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
-  margin-top: 32px;
+  margin-bottom: 8px;
+
   
 }
 .services-text {
@@ -437,7 +445,5 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--gray-title-color);
-  margin-top: 8px;
-  
+  color: var(--gray-title-color);  
 }
